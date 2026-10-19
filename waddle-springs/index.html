@@ -14,64 +14,100 @@
   p, li { margin: 6px 0; }
   .date { color: var(--muted); margin-bottom: 20px; }
   hr { border: 0; border-top: 1px solid var(--line); margin: 44px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 15px; }
+  th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; vertical-align: top; }
 </style>
 </head>
 <body>
 <main>
 <section lang="ko">
   <h1>Waddle Springs 개인정보처리방침</h1>
-  <p class="date">시행일: 2026년 10월 12일</p>
+  <p class="date">시행일: 2026년 10월 19일</p>
   <p>개발자 asdf1454(이하 "개발자")는 모바일 게임 Waddle Springs(이하 "게임")를 만들고 운영합니다. 이 방침은 게임이 어떤 정보를 다루는지 설명합니다.</p>
 
-  <h2>1. 수집하는 개인정보</h2>
+  <h2>1. 수집하는 정보</h2>
   <p>게임은 이름, 이메일, 전화번호, 위치, 연락처 같은 개인정보를 수집하지 않습니다. 회원가입이나 로그인도 없습니다.</p>
+  <p>원스토어 앱에서 게임의 광고 보상이나 유료 상품을 이용할 때에 한해, 아래 정보를 개발자의 서버로 보냅니다.</p>
+  <table>
+    <tr><th>항목</th><th>목적</th><th>보유 기간</th></tr>
+    <tr><td>플레이어 ID (원스토어가 이 게임에만 쓰도록 발급하는 가명 번호이며, 이름이나 원스토어 계정 정보가 아닙니다)</td><td>보상과 구매가 누구의 것인지 구분, 광고 제거 구매 복원</td><td>아래 각 기록과 같음</td></tr>
+    <tr><td>광고 보상 요청 번호와 처리 상태</td><td>광고를 끝까지 본 경우에만 보상을 한 번 지급</td><td>7일 후 삭제</td></tr>
+    <tr><td>구매 토큰, 상품 ID, 구매 시각</td><td>원스토어에 결제를 확인하고 상품을 한 번만 지급, 환불·문의 처리</td><td>삭제 요청 시까지 (법령상 보관 의무가 있으면 그 기간)</td></tr>
+  </table>
+  <p>결제는 원스토어 결제로 처리되며, 카드 번호 같은 결제 수단 정보는 개발자에게 전달되지 않습니다.</p>
 
   <h2>2. 기기에 저장되는 정보</h2>
-  <p>코인, 보석, 가게 진행 상황, 설정 같은 게임 기록은 이용자의 기기 안에만 저장되며 개발자에게 전송되지 않습니다. 게임을 삭제하면 기록도 함께 지워집니다.</p>
+  <p>코인, 보석, 가게 진행 상황, 설정 같은 게임 기록은 이용자의 기기 안에만 저장되며 개발자에게 전송되지 않습니다. 게임이나 앱 데이터를 삭제하면 기록도 함께 지워집니다.</p>
 
-  <h2>3. 인터넷 연결</h2>
-  <p>게임은 인터넷 연결 없이 동작하며, 어떤 정보도 개발자나 다른 회사로 보내지 않습니다.</p>
+  <h2>3. 광고</h2>
+  <p>원스토어 웹게임의 광고는 원스토어 앱이 보여 주며, 광고 식별자 등 광고에 쓰이는 정보는 원스토어와 광고 제공자의 방침을 따릅니다. 개발자는 광고 식별자를 받지 않습니다. 광고 제거 상품을 구매하면 광고 없이 보상을 받습니다.</p>
 
-  <h2>4. 광고와 결제</h2>
-  <p>현재 버전에는 광고와 유료 결제가 없습니다. 앞으로 광고나 결제를 추가하면, 그 전에 이 방침을 고쳐 어떤 정보가 어떻게 쓰이는지 알려 드립니다.</p>
+  <h2>4. 처리 위탁과 국외 이전</h2>
+  <p>개발자의 서버는 아래 회사의 서비스로 운영되며, 1번의 정보가 대한민국 밖의 서버에서 처리·보관될 수 있습니다.</p>
+  <table>
+    <tr><th>받는 자</th><th>국가</th><th>항목</th><th>목적</th><th>시기와 방법</th><th>보유 기간</th></tr>
+    <tr><td>Cloudflare, Inc. (연락처: privacyquestions@cloudflare.com)</td><td>미국 등 Cloudflare 데이터센터 소재 국가</td><td>1번 표의 항목</td><td>서버 운영과 데이터 보관</td><td>광고 보상·결제 이용 시 네트워크로 전송</td><td>1번 표와 같음</td></tr>
+    <tr><td>GitHub, Inc.</td><td>미국</td><td>접속 기록(IP 주소 등, 게임 파일을 내려받을 때)</td><td>게임 파일 제공</td><td>게임 실행 시</td><td>GitHub 방침에 따름</td></tr>
+  </table>
+  <p>국외 이전을 원하지 않으면 광고 보상과 유료 상품을 이용하지 않으면 됩니다. 이 경우에도 게임의 다른 기능은 그대로 이용할 수 있습니다.</p>
 
-  <h2>5. 아동의 개인정보</h2>
-  <p>게임은 누구의 개인정보도 수집하지 않으며, 13세 미만 아동의 개인정보도 마찬가지입니다.</p>
+  <h2>5. 이용자의 권리</h2>
+  <p>이용자는 개발자 서버에 있는 자신의 기록을 확인하거나 삭제해 달라고 요청할 수 있습니다. 아래 문의처로 연락하시면 지체 없이 처리합니다.</p>
 
-  <h2>6. 방침의 변경</h2>
+  <h2>6. 아동의 개인정보</h2>
+  <p>게임은 이름이나 연락처 같은 개인정보를 누구에게서도 수집하지 않습니다. 14세 미만 이용자의 결제는 원스토어의 정책에 따라 법정대리인의 동의가 필요할 수 있습니다.</p>
+
+  <h2>7. 방침의 변경</h2>
   <p>이 방침이 바뀌면 이 페이지에 새 내용과 시행일을 올립니다.</p>
 
-  <h2>7. 문의</h2>
-  <p>개인정보에 관한 문의는 이메일 <a href="mailto:hwanminyu038@gmail.com">hwanminyu038@gmail.com</a>으로 보내 주세요.</p>
+  <h2>8. 문의</h2>
+  <p>개인정보 보호책임자: asdf1454. 개인정보에 관한 문의는 이메일 <a href="mailto:hwanminyu038@gmail.com">hwanminyu038@gmail.com</a>으로 보내 주세요.</p>
 </section>
 
 <hr>
 
 <section lang="en">
   <h1>Waddle Springs Privacy Policy</h1>
-  <p class="date">Effective date: October 12, 2026</p>
+  <p class="date">Effective date: October 19, 2026</p>
   <p>asdf1454 ("we") makes and runs the mobile game Waddle Springs (the "Game"). This policy explains what information the Game handles.</p>
 
-  <h2>1. Personal information we collect</h2>
+  <h2>1. Information we collect</h2>
   <p>The Game does not collect personal information such as your name, email, phone number, location or contacts. There is no sign-up or login.</p>
+  <p>Only when you use rewarded ads or paid items in the ONE store app, the Game sends the following to our server:</p>
+  <table>
+    <tr><th>Item</th><th>Purpose</th><th>Kept for</th></tr>
+    <tr><td>Player ID (a pseudonymous number ONE store issues for this game only; not your name or ONE store account)</td><td>Telling whose reward or purchase it is; restoring Remove Ads</td><td>Same as the records below</td></tr>
+    <tr><td>Rewarded-ad request number and its status</td><td>Giving a reward once, only for an ad watched to the end</td><td>Deleted after 7 days</td></tr>
+    <tr><td>Purchase token, product ID, purchase time</td><td>Checking the payment with ONE store, handing the item out once, refunds and support</td><td>Until you ask us to delete it (or as long as the law requires)</td></tr>
+  </table>
+  <p>Payments are processed by ONE store. We never receive card numbers or other payment details.</p>
 
   <h2>2. Information stored on your device</h2>
-  <p>Your game progress and settings, such as coins, gems and shop progress, are stored only on your device and are never sent to us. Uninstalling the Game deletes them.</p>
+  <p>Your game progress and settings, such as coins, gems and shop progress, are stored only on your device and are never sent to us. Deleting the Game or its data deletes them.</p>
 
-  <h2>3. Internet connection</h2>
-  <p>The Game works without an internet connection and sends no information to us or anyone else.</p>
+  <h2>3. Ads</h2>
+  <p>Ads in the ONE store web game are shown by the ONE store app. Information used for ads, such as advertising IDs, is handled under the policies of ONE store and its ad partners. We do not receive advertising IDs. With Remove Ads, rewards come without ads.</p>
 
-  <h2>4. Ads and payments</h2>
-  <p>The current version has no ads and no paid purchases. If we add ads or purchases, we will update this policy first to explain what information is used and how.</p>
+  <h2>4. Service providers and transfers abroad</h2>
+  <p>Our server runs on the services below, so the information in section 1 may be processed and stored outside Korea.</p>
+  <table>
+    <tr><th>Recipient</th><th>Country</th><th>Items</th><th>Purpose</th><th>When and how</th><th>Kept for</th></tr>
+    <tr><td>Cloudflare, Inc. (privacyquestions@cloudflare.com)</td><td>United States and other countries with Cloudflare data centers</td><td>Items in section 1</td><td>Running the server and storing data</td><td>Sent over the network when you use rewarded ads or paid items</td><td>As in section 1</td></tr>
+    <tr><td>GitHub, Inc.</td><td>United States</td><td>Access logs (such as IP address) when the game files are downloaded</td><td>Serving the game files</td><td>When the Game starts</td><td>Under GitHub's policy</td></tr>
+  </table>
+  <p>If you do not want this transfer, do not use rewarded ads or paid items. Everything else in the Game still works.</p>
 
-  <h2>5. Children's privacy</h2>
-  <p>The Game does not collect personal information from anyone, including children under 13.</p>
+  <h2>5. Your rights</h2>
+  <p>You can ask to see or delete your records on our server. Contact us below and we will handle it without delay.</p>
 
-  <h2>6. Changes to this policy</h2>
+  <h2>6. Children's privacy</h2>
+  <p>The Game does not collect personal information such as names or contact details from anyone. Purchases by users under 14 may need a parent's consent under ONE store's policies.</p>
+
+  <h2>7. Changes to this policy</h2>
   <p>If this policy changes, we will post the new version and its effective date on this page.</p>
 
-  <h2>7. Contact</h2>
-  <p>For privacy questions, please email <a href="mailto:hwanminyu038@gmail.com">hwanminyu038@gmail.com</a>.</p>
+  <h2>8. Contact</h2>
+  <p>Privacy officer: asdf1454. For privacy questions, please email <a href="mailto:hwanminyu038@gmail.com">hwanminyu038@gmail.com</a>.</p>
 </section>
 </main>
 </body>
